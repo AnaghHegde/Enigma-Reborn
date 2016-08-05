@@ -51,8 +51,8 @@ Node.java:
 	
 Map.java:
 	A multilist of nodes:
-		Singly Linked List Horizontally
-		Doubly Linked List Vertically
+		Singly Linked List Horizontal
+		Doubly Linked List Vertical
 		
 Sequence.java:
 	File that contains information about key/value pairs of charcacter: sequence
@@ -68,7 +68,7 @@ Generate.java:
 	It infact Generates a new Sequence.java on its own
 
 MainFrame.java:
-	Contains the GUI for users to interact with the software
+	Contains the GUI for users to interact with the software 
 		
 Main.java:
 	The Main class file that contains the main() method
