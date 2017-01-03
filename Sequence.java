@@ -6,6 +6,7 @@ public class Sequence
    {
       key=x;
       sequence=seq;
+      //
    }
 }
    
