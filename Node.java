@@ -1,3 +1,4 @@
+//This is node class
 public class Node 
 {
 	public char data;
