@@ -8,4 +8,4 @@ class Main
 		JFrame f=new MainFrame();
 	}
 }	
-	
+//This is main java file	
