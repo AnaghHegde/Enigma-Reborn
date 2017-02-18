@@ -15,13 +15,29 @@
 
 ### Step 2: Branch policy<br>
 
-  Start off from your `development` branch and make sure it is up-to-date with the latest version of the committer repo's
+ Start off from your `development` branch and make sure it is up-to-date with the latest version of the committer repo's
  `development` branch. Make sure you are working in development branch only.<br>
  `git pull upstream development`
     
- If you have not added upstream follow the steps given [here](https://help.github.com/articles/configuring-a-remote-for-a-fork/).
-
+  If you have not added upstream follow the steps given [here](https://help.github.com/articles/configuring-a-remote-for-a-fork/).
+  
 ### Step 3: Coding Policy
+
+  * Please help us follow the best practice to make it easy for the reviewer as well as the contributor. 
+    We want to focus on the code quality more than on managing pull request ethics.
+    
+  * Single commit per pull request
+
+  * Reference the issue numbers in the commit message. Follow the pattern Fixes #
+
+  * Follow uniform design practices. The design language must be consistent throughout the app.
+
+  * The pull request will not get merged until and unless the commits are squashed. 
+    In case there are multiple commits on the PR,  the commit author needs to squash them and 
+    not the maintainers cherrypicking and merging squashes.
+    If you don't know what does squashing of commits is, then follow [this](http://stackoverflow.com/a/35704829/6181189).
+
+  * If the PR is related to any front end change, please attach relevant screenshots in the pull request description
 
 ### Step 4: Submitting a PR
 
@@ -37,16 +53,3 @@
    Ensure that all tests pass before triggering another build.
  * The CI log will also contain the command that will enable running the failed tests locally.<br>
  * Reviewer: A core team member will be assigned to the PR as its reviewer, who will approve your PR or he will suggest changes.
-
- Squash your commits. If you don't know what does squashing of commits is read from [here](http://stackoverflow.com/a/35704829/6181189). Then follow the steps given below.
-
- 1. Run this command : <br>
-   `git rebase -i HEAD~numberofcommits` numberofcommits is how many commits you wan't to squash.
- 
- 2. Then a pop-up would appear with your default text editor.
- 
- 3. In that file replace all of the pick with squash excluding the first one.Save the editor.
- 
- 4. Run this command `git push -f origin yourbranch`
- 
-    Usually origin is your remote if it is not so replace origin with the remote.
