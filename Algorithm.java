@@ -97,6 +97,4 @@ class Algorithm
 	{
 		return (int)a%3+1;
 	}
-}		
-
-// try git
+}
