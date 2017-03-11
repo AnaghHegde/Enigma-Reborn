@@ -8,6 +8,7 @@ class Algorithm
 		s=null;
 		seq=null;
 	}
+
 	public String encrypt(String d,String keys)
 	{
 	    s=d;
@@ -97,3 +98,5 @@ class Algorithm
 		return (int)a%3+1;
 	}
 }		
+
+// try git
